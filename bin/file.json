@@ -1,0 +1,306 @@
+{
+	"status": "OK",
+	"code": "S0",
+	"message": {
+		"furnitures": [{
+			"extendedCode": "A.B",
+			"secondaryCode": null,
+			"address": {
+				"addressDetail1": "PARIS",
+				"addressDetail2": "15EME",
+				"adressComplement1": "DEVANT LA POSTE",
+				"adressComplement2": "EN FACE MAIRIE",
+				"zipCode": {
+					"code": "75015",
+					"name": "PARIS 15EME"
+				},
+				"district": {
+					"code": "75015",
+					"name": "PARIS 15EME"
+				},
+				"city": {
+					"code": "75",
+					"name": "PARIS"
+				}
+			},
+			"agency": {
+				"code": "O0",
+				"name": "NORD PAS DE CALAIS",
+				"typeCode": "03"
+			},
+			"characteristics": {
+				"family": {
+					"code": "BR",
+					"name": "BARRIERE"
+				},
+				"subFamily": {
+					"code": "050",
+					"name": "BR MUR PEINT AVEC PUB INCLUS"
+				},
+				"model": {
+					"code": "05001",
+					"name": "BR MUR PEINT PUB INCLUS",
+					"description": "Test Device"
+				},
+				"furnitureOwner": {
+					"code": "01556",
+					"name": "CCF"
+				},
+				"activity": {
+					"code": "ACT_1",
+					"name": "ACTIVITY 1"
+				},
+				"utilities": {
+					"electricPowerLink": true,
+					"currentUtilityContracts": [{
+						"providerName": "RFF-SNCF A préciser",
+						"serviceType": {
+							"code": "0000000001",
+							"name": "ELECTRICITE"
+						},
+						"startDate": "01/12/2015 00:00:00",
+						"endDate": "15/12/2017 23:59:59"
+					},
+					{
+						"providerName": "Compteur bailleur non ref",
+						"serviceType": {
+							"code": "0000000003",
+							"name": "EAU"
+						},
+						"startDate": "16/12/2015 00:00:00",
+						"endDate": "15/12/2018 23:59:59"
+					}]
+				},
+				"currentAdvertisingStatus": {
+					"enabled": true,
+					"startDate": "16/12/2015 00:00:00",
+					"endDate": "31/12/2159 23:59:59"
+				}
+			},
+			"status": {
+				"firstMountDate": "01/01/2014 00:00:00",
+				"currentStatus": {
+					"code": "6",
+					"name": "MONTE",
+					"startDate": "16/12/2015 00:00:00"
+				}
+			},
+			"currentContract": {
+				"code": "NH 1",
+				"name": "PUB",
+				"typeCode": "CONV",
+				"typeName": "CONVENTION",
+				"activityCode": "L",
+				"activityName": "LOCATION",
+				"associationStartDate": "16/12/2015 00:00:00",
+				"associationEndDate": "15/12/2018 23:59:59"
+			},
+			"options": [{
+				"code": "BIV02",
+				"name": "Groupe de bornettes STANDARD",
+				"currentStatus": {
+					"code": "6",
+					"name": "MONTE",
+					"startDate": "16/12/2015 00:00:00",
+					"endDate": "15/12/2018 23:59:59"
+				}
+			}],
+			"currentTax": {
+				"code": "CO",
+				"name": "Exonération de TLPE",
+				"startDate": "16/12/2015 00:00:00",
+				"endDate": "15/12/2159 23:59:59"
+			},
+			"transportType": {
+				"value": "BILLANCOURT"
+			},
+			"transportTypology": {
+				"value": "BIG BUS"
+			},
+			"geographicCoordinates": [{
+				"coordinatesType": "WGS84",
+				"x": 25.2,
+				"y": 62.7
+			}],
+			"frames": [{
+				"extendedCode": "A.B.1",
+				"code": "Frame 1",
+				"secondaryCode": "A.B.SECONDE.1",
+				"currentStatus": {
+					"code": "6",
+					"name": "MONTE",
+					"startDate": "16/12/2015 00:00:00"
+				},
+				"boxNumber": 1,
+				"options": [{
+					"code": "RA636",
+					"name": "RAMPE ETS",
+					"optionType": {
+						"code": "ES",
+						"name": "Equipement Spécial"
+					},
+					"currentStatus": {
+						"code": "6",
+						"name": "MONTE",
+						"startDate": "16/12/2015 00:00:00",
+						"endDate": "15/12/2018 23:59:59"
+					}
+				}],
+				"frameType": {
+					"code": "C",
+					"name": "Colle",
+					"panelDefaultNumber": null
+				},
+				"frameSize": {
+					"code": "12M COLLE",
+					"name": "12 m² Colle"
+				},
+				"frameFamilySize": {
+					"code": "12",
+					"name": "12 m²"
+				},
+				"geographicCoordinates": [{
+					"coordinatesType": "WGS84",
+					"x": 1.5,
+					"y": 22.7
+				},
+				{
+					"coordinatesType": "WGS85",
+					"x": 20.2,
+					"y": 52.7
+				}],
+				"transportStopName": {
+					"value": "BIG BUS"
+				},
+				"transportLineNumber": {
+					"value": "42"
+				},
+				"transportEndLineStation": {
+					"value": "42"
+				},
+				"panels": [{
+					"extendedCode": "A.B.1.1",
+					"secondaryCode": null,
+					"currentFamily": {
+						"code": "FL",
+						"name": "Face LC Fixe",
+						"marketingAttribute": null,
+						"allianceCompany": {
+							"code": "10031",
+							"name": "CAP"
+						},
+						"startDate": "16/12/2015 00:00:00",
+						"endDate": "15/12/2159 23:59:59"
+					}
+				},
+				{
+					"extendedCode": "A.B.1.2",
+					"secondaryCode": null,
+					"currentFamily": {
+						"code": "07",
+						"name": "Face Parking",
+						"marketingAttribute": {
+							"code": "01",
+							"name": "AT/LC"
+						},
+						"allianceCompany": null,
+						"startDate": "01/01/2015 00:00:00",
+						"endDate": "15/12/2159 23:59:59"
+					}
+				}]
+			},
+			{
+				"extendedCode": "A.B.2",
+				"code": "Frame 2",
+				"secondaryCode": "A.B.SECONDE.2",
+				"currentStatus": {
+					"code": "10",
+					"name": "DEMONTE",
+					"startDate": "16/12/2015 00:00:00"
+				},
+				"boxNumber": 2,
+				"options": [],
+				"frameType": {
+					"code": "C",
+					"name": "Colle",
+					"panelDefaultNumber": null
+				},
+				"frameSize": {
+					"code": "12M COLLE",
+					"name": "12 m² Colle"
+				},
+				"frameFamilySize": {
+					"code": "12",
+					"name": "12 m²"
+				},
+				"geographicCoordinates": [],
+				"transportStopName": null,
+				"transportLineNumber": null,
+				"transportEndLineStation": {
+					"value": "TAXI"
+				},
+				"panels": []
+			}]
+		},
+		{
+			"extendedCode": "C.D",
+			"secondaryCode": null,
+			"address": null,
+			"agency": {
+				"code": "O0",
+				"name": "NORD PAS DE CALAIS",
+				"typeCode": "03"
+			},
+			"characteristics": {
+				"family": {
+					"code": "BR",
+					"name": "BARRIERE"
+				},
+				"subFamily": {
+					"code": "050",
+					"name": "BR MUR PEINT AVEC PUB INCLUS"
+				},
+				"model": {
+					"code": "05001",
+					"name": "BR MUR PEINT PUB INCLUS",
+					"description": "Test Device"
+				},
+				"furnitureOwner": {
+					"code": "01556",
+					"name": "CCF"
+				},
+				"activity": null,
+				"utilities": {
+					"electricPowerLink": true,
+					"currentUtilityContracts": [{
+						"providerName": "RFF-SNCF A préciser",
+						"serviceType": {
+							"code": "0000000001",
+							"name": "ELECTRICITE"
+						},
+						"startDate": "01/12/2015 00:00:00",
+						"endDate": "15/12/2017 23:59:59"
+					}]
+				},
+				"currentAdvertisingStatus": null
+			},
+			"status": {
+				"firstMountDate": null,
+				"currentStatus": {
+					"code": "10",
+					"name": "DEMONTE",
+					"startDate": "16/12/2015 00:00:00"
+				}
+			},
+			"currentContract": null,
+			"options": [],
+			"currentTax": null,
+			"transportType": null,
+			"transportTypology": {
+				"value": "BIG BUS"
+			},
+			"geographicCoordinates": [],
+			"frames": []
+		}]
+	}
+}

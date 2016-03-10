@@ -1,0 +1,44 @@
+{
+  "version" : "version1",
+  "extractDate" : "2016-01-01",
+  "content" : {
+    "type" : "data",
+    "faces" : [
+      {
+        "codes" : [
+          {
+            "code" : "code1",
+            "altCode" : "altcode11"
+          },
+          {
+            "code" : "code2",
+            "altCode" : "altcode22"
+          }
+        ],
+        "nom" : "face 1"
+      },
+      {
+        "codes" : [
+          {
+            "code" : "code3",
+            "altCode" : "altcode33"
+          },
+          {
+            "code" : "code4",
+            "altCode" : "altcode44"
+          }
+        ],
+        "nom" : "face 2",
+        "date" : "2016-03-01"
+      }
+    ],
+    "affectations" : [
+      {
+        "ville" : "Bordeaux"
+      },
+      {
+        "ville" : "Paris"
+      }
+    ]
+  }
+}
