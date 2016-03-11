@@ -24,19 +24,22 @@ public class JSONExplorer {
 
     private int generalOffset = 0;
 
-    /*
+    /**
      * structure map contains : - key : path of leafs - value : index of column
      */
     private Map<String, Integer> structure = new HashMap<String, Integer>();
 
+    /**
+     * Data map contains : - key : Position(line, col) - value : Content 
+     */
     private Map<Position, Object> data = new TreeMap<Position, Object>();
 
     public void exploreJson(JsonNode rootNode) {
         explore("", rootNode, 0);
         structure = sortByValue(structure);
 
-         //printStructure();
-         //printDataRecur(this.data);
+        // printStructure();
+        // printDataRecur(this.data);
     }
 
     public int explore(String path, JsonNode node, int lineIndex) {

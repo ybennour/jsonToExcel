@@ -4,16 +4,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class CSVHelper {
 
-    private static final String SEP = ";";
+    private static final String COL_SEP = ";";
 
     private static final String LINE_SEP = "\r\n";
 
@@ -34,7 +30,7 @@ public class CSVHelper {
             // write first line
             for (Map.Entry<String, Integer> entry : structure.entrySet()) {
                 String title = getLastKey(entry.getKey());
-                titles = titles.isEmpty() ? title : titles + SEP + title;
+                titles = titles.isEmpty() ? title : titles + COL_SEP + title;
             }
             writer.write(titles);
             writer.write(LINE_SEP);
@@ -73,7 +69,7 @@ public class CSVHelper {
                 line = datium;
                 first = false;
             } else {
-                line = line + SEP + datium;
+                line = line + COL_SEP + datium;
             }
         }
 

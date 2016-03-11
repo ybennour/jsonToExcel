@@ -3,9 +3,6 @@ package com.ybennour.jsonToExcel.process;
 import java.io.File;
 import java.io.IOException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -13,9 +10,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Created by Youssef BENNOUR on 25/02/16.
  */
 public class Core {
-    final private Logger log = LoggerFactory.getLogger(Core.class);
 
-    public JSONExplorer exploreJson(File file) {
+    private JSONExplorer jsonExplorer = new JSONExplorer();
+
+    public void exploreJson(File file) {
         JsonNode rootNode;
         try {
             rootNode = readFile(file);
@@ -23,14 +21,12 @@ public class Core {
             throw new RuntimeException("file not valid", e);
         }
 
-        JSONExplorer explorer = new JSONExplorer();
-        explorer.exploreJson(rootNode);
+        jsonExplorer.exploreJson(rootNode);
 
-        return explorer;
     }
 
-    public void writeCSV(JSONExplorer explorer, File csvFile) {
-        CSVHelper csvHelper = new CSVHelper(explorer.getStructure(), explorer.getData());
+    public void writeCSV(File csvFile) {
+        CSVHelper csvHelper = new CSVHelper(jsonExplorer.getStructure(), jsonExplorer.getData());
         csvHelper.writeCsv(csvFile);
     }
 

@@ -33,11 +33,11 @@ public class Main {
 
         Core core = new Core();
 
-        JSONExplorer explorer = core.exploreJson(file);
+        core.exploreJson(file);
         log.info("JSON file explored");
 
         File csvFile = initOutputFile();
-        core.writeCSV(explorer, csvFile);
+        core.writeCSV(csvFile);
         log.info("output.csv created");
     }
 
