@@ -1,8 +1,7 @@
-Présentation :
+Presentation:
 ==
-Cet outil permet de transformer un fichier JSON en un fichier plat Excel.
+This program permits transforming JSON file to a CSV file.
 
-Simplification :
+Simplifying assumption:
 ==
-Afin de simplifier le développement, les arrays ne doivent contenir que des objects.
-
+This program only runs correctly with JSON that contains only Objects into Arrays.
